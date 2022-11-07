@@ -138,8 +138,11 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
   color: var(--secondary-text-color);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .tel {
@@ -149,8 +152,11 @@ a {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
   color: var(--secondary-text-color);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .info:hover,
@@ -176,12 +182,9 @@ a {
   margin: 0 auto;
 }
 
-/* ------line------- */
-/* .line { 
-  display: block;
-  width: 1600px;
-  border: 1px solid #ececec;
-}*/
+.header-logo {
+  fill: currentColor;
+}
 
 /*--hero--*/
 .post-title {
@@ -244,6 +247,14 @@ a {
   color: var(--primary-text-color);
 }
 /*---особливости---*/
+.box-ander-hero {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
 
 .peculiarities {
   padding-top: 94px;
@@ -309,6 +320,7 @@ a {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 
   color: var(--secondary-text-color);
   /* margin-bottom: 30px; */
@@ -329,11 +341,52 @@ a {
   padding: 30px 0;
 }
 
+.sosials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  fill: #afb1b8;
+}
+
+.sosials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white);
+  color: #afb1b8;
+
+}
+
+.sosials-link:hover,
+.sosials-link:focus {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.sosials-icon {
+  fill: currentColor;
+}
+
+/* ------Постійні клієнти------ */
+.box {
+  box-sizing: border-box;
+  padding: 16px 32px;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
 /*----footer----*/
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--hero-footer-background);
   max-width: 1600px;
   margin: 0 auto;
@@ -412,6 +465,53 @@ a {
   color: var(--accent);
 }
 
+.join {
+}
+
+.section-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.join-items {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.sosials-footer {
+  display: flex;
+  justify-content: center;
+  align-items:;
+  gap: 10px;
+  fill: #afb1b8;
+}
+
+.sosials-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+
+}
+
+.sosials-link-footer:hover,
+.sosials-link-footer:focus {
+  background-color: var(--accent);
+  color: var(--white);}
 /*---------------------------------------------------------------------*/
 /*portfolio.html*/
 
