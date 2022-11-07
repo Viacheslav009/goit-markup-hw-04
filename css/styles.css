@@ -28,7 +28,7 @@ body {
 /* контейнер */
 .container {
   width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -173,7 +173,7 @@ a {
 .header {
   border-bottom: 1px solid #ececec;
   max-width: 1600px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 /* ------line------- */
@@ -199,9 +199,8 @@ a {
 }
 .hero {
   text-align: center;
-  
-  
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4););
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-color: #c4c4c4;
   background-image: url(../img/hero-bg.png);
   background-position: center;
@@ -213,8 +212,7 @@ a {
   padding-left: 452px;
   padding-right: 452px;
   max-width: 1600px;
-  margin:0 auto;
-  
+  margin: 0 auto;
 }
 
 /*---кнопка---*/
@@ -282,7 +280,7 @@ a {
 .team {
   background-color: var(--secondary-background-white);
   max-width: 1600px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .cards-team {
   background: var(--white);
@@ -338,7 +336,7 @@ a {
   padding-bottom: 60px;
   background-color: var(--hero-footer-background);
   max-width: 1600px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .footer-items {
