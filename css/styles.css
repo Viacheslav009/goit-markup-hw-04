@@ -359,7 +359,6 @@ a {
   border-radius: 50%;
   background-color: var(--white);
   color: #afb1b8;
-
 }
 
 .sosials-link:hover,
@@ -490,7 +489,7 @@ a {
 .sosials-footer {
   display: flex;
   justify-content: center;
-  align-items:;
+  align-items: ;
   gap: 10px;
   fill: #afb1b8;
 }
@@ -503,15 +502,15 @@ a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--white);
-
 }
 
 .sosials-link-footer:hover,
 .sosials-link-footer:focus {
   background-color: var(--accent);
-  color: var(--white);}
+  color: var(--white);
+}
 /*---------------------------------------------------------------------*/
 /*portfolio.html*/
 
