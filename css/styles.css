@@ -11,7 +11,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+ul {
   margin: 0;
 }
 /* убираем отступы у картинок снизу */
@@ -25,12 +26,18 @@ body {
   color: var(--secondary-text-color);
   font-family: Roboto, Raleway;
 }
-/* контейнер */
+/*класс контейнер  ограничивает и центрует контент*/
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*класс секция заданы верхние и нижние падинги по 94px,  */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*цвет основного  черного текста color: #212121
@@ -163,10 +170,10 @@ a {
 .info:focus {
   color: var(--accent);
 }
-.tel:hover,
+ .tel:hover,
 .tel:focus {
   color: var(--accent);
-}
+} 
 .nav-list {
   display: flex;
   align-items: center;
@@ -194,7 +201,7 @@ a {
   font-size: 44px;
   line-height: calc(60 / 44);
   margin-bottom: 30px;
-
+  margin: 0 auto;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -203,22 +210,24 @@ a {
 .hero {
   text-align: center;
 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../img/hero-bg.png);
   background-color: #c4c4c4;
-  background-image: url(../img/hero-bg.png);
+  /* background-image: url(../img/hero-bg.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
+  
+
   max-width: 1600px;
   margin: 0 auto;
 }
 
 /*---кнопка---*/
+
+
 .hero-button {
   font-family: 'Roboto';
   font-style: normal;
@@ -226,7 +235,7 @@ a {
   font-size: 16px;
   line-height: calc(30 / 16);
 
-  display: inline-block;
+  display:inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -236,7 +245,7 @@ a {
   height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   /* margin-bottom: 200px; */
-
+   margin-top: 30px;
   color: var(--white);
   border: none;
   background-color: var(--accent);
@@ -250,10 +259,16 @@ a {
 .box-ander-hero {
   width: 270px;
   height: 120px;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
 
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .peculiarities {
@@ -263,12 +278,18 @@ a {
 .list {
   display: flex;
   gap: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  
+  
+}
+
+.ander-hero-logo{
+  
+  /* margin: 0 auto; */
 }
 
 .list-item {
-  /* padding-bottom: 94px; */
+  display: flex;
+  gap: 30px;/* padding-bottom: 94px; */
 }
 .section-title {
   font-weight: 700;
@@ -288,32 +309,34 @@ a {
   color: var(--secondary-text-color);
 }
 /*--фото чим ми займаэмося та бригада--*/
+
 .team {
   background-color: var(--secondary-background-white);
-  max-width: 1600px;
-  margin: 0 auto;
+
 }
 .cards-team {
   background: var(--white);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  /* padding-bottom: 94px; */
+  border-radius: 0px 0px 4px 4px;  
 }
 
-.section {
+
+.title-studio{
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-
-  /* padding-top: 94px; */
+box-sizing: border-box;
+  color: var(--black);
   margin-bottom: 50px;
 }
+
+
+
+
 .section-unit-work {
   font-weight: 400;
   font-size: 16px;
@@ -372,28 +395,54 @@ a {
 }
 
 /* ------Постійні клієнти------ */
-.box {
-  box-sizing: border-box;
-  padding: 16px 32px;
-
+.client-logo {
+  /* box-sizing: border-box; */
+   /* padding: 16px 32px;  */
+  display: flex;
+  align-items: center; 
+  justify-content: center;
   width: 170px;
   height: 92px;
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  
+}
+
+.client-logo:hover,
+.client-logo:focus{
+border-color: #2196f3;
+fill: inherit;
+/* stroke: #2196f3; */
+
+}
+
+.client-logo-symbol{
+  fill:#afb1b8;
+
+}
+
+.client-logo-symbol:hover,
+.client-logo-symbol:focus
+{
+  fill: #2196f3; 
+}
+
+.clients:hover{
+fill: #2196f3;
 }
 
 /*----footer----*/
 
 .footer {
   background-color: var(--hero-footer-background);
-  max-width: 1600px;
-  margin: 0 auto;
+   padding-top: 60px;
+  padding-bottom: 60px;
 }
-
+/* 
 .footer-items {
   margin: 0;
-}
+} */
 
 .footer-logo {
   font-family: 'Raleway';
@@ -479,8 +528,8 @@ a {
 }
 
 .join-items {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  /* padding-top: 60px;
+  padding-bottom: 60px; */
   display: flex;
   gap: 70px;
   align-items: center;
@@ -489,7 +538,6 @@ a {
 .sosials-footer {
   display: flex;
   justify-content: center;
-  align-items: ;
   gap: 10px;
   fill: #afb1b8;
 }
@@ -514,10 +562,10 @@ a {
 /*---------------------------------------------------------------------*/
 /*portfolio.html*/
 
-.sect {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
+  
+
+
 
 .list-filters {
   display: flex;
