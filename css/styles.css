@@ -59,7 +59,19 @@ studio-logo-header #000000
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
 }
+
+/* убираем точки в списке */
+ul[class],
+ol[class],
+li {
+  list-style: none;
+}
+
 /* шапка */
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 /*logo*/
 .logo {
@@ -80,13 +92,6 @@ studio-logo-header #000000
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--black);
-}
-
-/* убираем точки в списке */
-ul[class],
-ol[class],
-li {
-  list-style: none;
 }
 
 /* Отменяем подчеркивание у ссылки */
@@ -150,6 +155,8 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .tel {
@@ -164,6 +171,8 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .info:hover,
@@ -386,14 +395,12 @@ a {
 
 /* ------Постійні клієнти------ */
 
-.list-client{
+.list-client {
   display: flex;
   gap: 30px;
 }
 
-
-
-.client-logo {
+.client-link {
   /* box-sizing: border-box; */
   /* padding: 16px 32px;  */
   display: flex;
@@ -401,22 +408,30 @@ a {
   justify-content: center;
   width: 170px;
   height: 92px;
-
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
- /* .client-logo:hover,
+.client-link:hover > .client-logo-symbol,
+.client-link:focus > .client-logo-symbol {
+  fill: #2196f3;
+}
+
+.client-link:hover,
+.client-link:focus {
+  border-color: #2196f3;
+}
+/* .client-logo:hover,
 .client-logo:focus {
   border-color: #2196f3;
   
 }  */
 
 .client-logo-symbol {
-  fill:#afb1b8 ;
+  fill: #afb1b8;
 }
 
- /* .client-logo-symbol:hover,
+/* .client-logo-symbol:hover,
 .client-logo-symbol:focus {
   fill:#2196f3 ;
 }  */
@@ -430,18 +445,6 @@ a {
   fill: #2196f3;
   border-color: #2196f3; 
 } */
-
-.client-logo:hover>.client-logo-symbol,
-.client-logo:focus>.client-logo-symbol
-{
-fill: #2196f3;
-}
-
-.client-logo:hover,
-.client-logo:focus
-{
-border-color: #2196f3;
-}
 
 /*----footer----*/
 
