@@ -25,31 +25,41 @@
   </head>
   <body>
     <!--шапка-->
-    <header class="header">
-      <div class="header-container container">
+    <header class="container">
+      <div class="header-container ">
         <a class="logo" href="index.html">Web<span class="logo-header">Studio</span></a>
         <nav>
           <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Студія</a></li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link curent">Портфоліо</a>
-            </li>
-            <li class="nav-item"><a href="/" class="nav-link">Контакти</a></li>
+            <li class="nav-item"><a href="./index.html" class="nav-link ">Студія</a></li>
+            <li class="nav-item"><a href="./portfolio.html" class="nav-link curent">Портфоліо</a></li>
+            <li class="nav-item"><a href="./index.html" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
         <div class="header-group">
-          <a href="info@devstudio.com" class="info">info@devstudio.com</a>
-          <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+          <a href="info@devstudio.com" class="info">
+            <svg class="header-logo" width="16" height="12">
+              <use href="./img/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+
+            info@devstudio.com
+          </a>
+          <a href="tel:+380961111111" class="tel">
+            <svg class="header-logo" width="10" height="16">
+              <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+
+            +38 096 111 11 11</a
+          >
         </div>
       </div>
     </header>
-    <!-- line -->
-    <!-- <div class="line"></div> -->
+  
+    <!--portfolio-->
 
     <main>
       <section class="section">
         <div class="container">
-          <!--portfolio-->
+          
           <!-- <h1>filters</h1> -->
           <ul class="list-filters">
             <li><button type="button" class="portfolio-btn">Усі</button></li>
@@ -146,8 +156,9 @@
       </section>
     </main>
     <!--на подвале-->
-    <footer class="footer" style="background-color: #2f303a">
-      <div class="container">
+    <footer class="footer ">
+      <div class="join-items container">
+        <div>
         <a class="footer-logo" href="index.html">Web<span class="logo-footer">Studio</span></a>
         <address>
           <ul class="footer-items">
@@ -160,11 +171,75 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li><a class="info-tel-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="info-footer" href="info@devstudio.com">info@devstudio.com</a></li>
+            <li>
+              <a class="info-tel-footer" href="tel:+380961111111">+38 096 111 11 11</a
+              >
+            </li>
+            <li>
+              <a class="info-footer" href="info@devstudio.com">info@devstudio.com</a
+              >
+            </li>
           </ul>
         </address>
       </div>
+      <div class="join">
+        <h3 class="section-join">приєднуйтесь</h3>
+        <ul class="sosials-footer"> 
+                  <li class="socials-item">
+                    <a 
+                   class="sosials-link-footer" 
+                   href="htpps://instagram.com"
+                   target="_blank" 
+                   rel="nooper noreferrer"
+                   aria-label="Instagram icon"    
+                >
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+                    <a 
+                   class="sosials-link-footer" 
+                   href="htpps://instagram.com"
+                   target="_blank" 
+                   rel="nooper noreferrer"
+                   aria-label="Instagram icon"    
+                >
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+                    <a 
+                   class="sosials-link-footer" 
+                   href="htpps://instagram.com"
+                   target="_blank" 
+                   rel="nooper noreferrer"
+                   aria-label="Instagram icon"    
+                >
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+                    <a 
+                   class="sosials-link-footer" 
+                   href="htpps://instagram.com"
+                   target="_blank" 
+                   rel="nooper noreferrer"
+                   aria-label="Instagram icon"    
+                >
+                <svg class="sosials-icon" width="20" height="20">
+                  <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>    
+                </ul> 
+        </div>
+     </div>
     </footer>
   </body>
 </html>
