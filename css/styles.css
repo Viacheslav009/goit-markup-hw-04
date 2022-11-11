@@ -69,9 +69,7 @@ li {
 
 /* шапка */
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
+
 
 /*logo*/
 .logo {
@@ -194,7 +192,7 @@ a {
 
 .header {
   border-bottom: 1px solid #ececec;
-  max-width: 1600px;
+  /* max-width: 1600px; */
   margin: 0 auto;
 }
 
